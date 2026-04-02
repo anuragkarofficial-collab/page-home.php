@@ -78,6 +78,10 @@ get_header();
 			<?php elseif( get_row_layout() == 'value_block' ): ?>
 				<?php get_template_part( 'template-parts/value-block' ); ?>
 
+			<?php // Animal AI Simple Block ?>
+			<?php elseif( get_row_layout() == 'animal_ai_simple_block' ): ?>
+				<?php get_template_part( 'template-parts/animal-ai-simple-block' ); ?>
+
 			<?php // Clinical Values Block ?>
 			<?php elseif( get_row_layout() == 'clinical_values_block' ): ?>
 				<?php get_template_part( 'template-parts/clinical-values-block' ); ?>
