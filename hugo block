@@ -43,7 +43,7 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
 
     #<?php echo esc_attr($block_id); ?> {
       padding: clamp(38px, 4.8vw, 77px) 0;
-      font-family: "Rubik", sans-serif;
+      font-family: "Mont", sans-serif;
       overflow-x: hidden;
     }
 
@@ -67,21 +67,21 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h1 {
-      font-size: clamp(34px, 4vw, 58px);
+      font-size: 52px;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h2 {
-      font-size: clamp(27px, 3.2vw, 48px);
+      font-size: 45px;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h3 {
-      font-size: clamp(21px, 2.4vw, 34px);
+      font-size: 25px;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle {
       margin: 0 0 18px;
       color: <?php echo esc_attr($subtitle_color); ?>;
-      font-family: "Rubik", sans-serif;
+      font-family: "Mont", sans-serif;
       position: relative;
       left: -48px;
     }
@@ -90,39 +90,50 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle p,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle h1,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle h2,
-    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle h3 {
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle h3,
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle strong,
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle b,
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle span,
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle em,
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle i {
       margin-top: 0;
       margin-bottom: 0;
-      font-family: "Rubik", sans-serif;
+      font-family: "Mont", sans-serif !important;
       letter-spacing: -0.01em;
+      font-weight: 300 !important;
+      font-style: normal !important;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h1,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h1 p {
-      font-size: clamp(24px, 2.4vw, 37px);
+      font-size: 40px;
       line-height: 1.12;
-      font-weight: 700;
+      font-weight: 300;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h2,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h2 p {
-      font-size: clamp(19px, 1.92vw, 27px);
+      font-size: 35px;
       line-height: 1.18;
-      font-weight: 700;
+      font-weight: 300;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h3,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-h3 p {
-      font-size: clamp(16px, 1.6vw, 22px);
+      font-size: 25px;
       line-height: 1.24;
-      font-weight: 700;
+      font-weight: 300;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-p,
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle.is-p p {
-      font-size: clamp(14px, 1.44vw, 19px);
+      font-size: 20px;
       line-height: 1.45;
-      font-weight: 400;
+      font-weight: 300;
+    }
+
+    #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle--mobile {
+      display: none;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__description {
@@ -130,7 +141,7 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       font-size: 13px;
       line-height: 1.45;
       color: <?php echo esc_attr($description_line_color); ?>;
-      font-family: "Rubik", sans-serif;
+      font-family: "Mont", sans-serif;
       letter-spacing: -0.01em;
       position: relative;
       left: -48px;
@@ -157,10 +168,10 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__label {
-      font-size: clamp(14px, 1.44vw, 22px);
+      font-size: 18px;
       line-height: 1.28;
       text-align: center;
-      font-family: "Rubik", sans-serif;
+      font-family: "Mont", sans-serif;
       letter-spacing: -0.01em;
     }
 
@@ -189,19 +200,27 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h1 {
-        font-size: clamp(26px, 7vw, 34px);
+        font-size: 42px;
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h2 {
-        font-size: clamp(22px, 6.4vw, 29px);
+        font-size: 35px;
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h3 {
-        font-size: clamp(19px, 5.2vw, 24px);
+        font-size: 25px;
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle {
         left: 0;
+      }
+
+      #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle--desktop {
+        display: none;
+      }
+
+      #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle--mobile {
+        display: block;
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__description {
@@ -219,7 +238,7 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       }
 
       #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__label {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.2;
       }
     }
@@ -234,8 +253,11 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
     <?php endif; ?>
 
     <?php if ($subtitle) : ?>
-      <div class="hc-hugo-new-block__subtitle is-<?php echo esc_attr($subtitle_size); ?>">
+      <div class="hc-hugo-new-block__subtitle hc-hugo-new-block__subtitle--desktop is-<?php echo esc_attr($subtitle_size); ?>">
         <?php echo wp_kses_post($subtitle); ?>
+      </div>
+      <div class="hc-hugo-new-block__subtitle hc-hugo-new-block__subtitle--mobile is-<?php echo esc_attr($subtitle_size); ?>">
+        <p>HawkCell optimizes MRI protocols for faster, secure network deployment, delivering high-quality images at speed.</p>
       </div>
     <?php endif; ?>
 
