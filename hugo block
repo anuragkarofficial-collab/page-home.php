@@ -42,7 +42,7 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
     }
 
     #<?php echo esc_attr($block_id); ?> {
-      padding: clamp(38px, 4.8vw, 77px) 0;
+      padding: 80px 24px 80px;
       font-family: "Mont", sans-serif;
       overflow-x: hidden;
     }
@@ -60,10 +60,10 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       color: <?php echo esc_attr($title_color); ?>;
       font-family: <?php echo $title_font_family; ?>;
       white-space: nowrap;
-      overflow-wrap: normal;
-      word-break: keep-all;
-      position: relative;
-      left: -48px;
+      overflow-wrap: anywhere;
+      word-break: normal;
+      position: static;
+      left: auto;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__title.is-h1 {
@@ -82,8 +82,8 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       margin: 0 0 18px;
       color: <?php echo esc_attr($subtitle_color); ?>;
       font-family: "Mont", sans-serif;
-      position: relative;
-      left: -48px;
+      position: static;
+      left: auto;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__subtitle,
@@ -143,8 +143,8 @@ $block_id = 'hc-hugo-new-block-' . wp_unique_id();
       color: <?php echo esc_attr($description_line_color); ?>;
       font-family: "Mont", sans-serif;
       letter-spacing: -0.01em;
-      position: relative;
-      left: -48px;
+      position: static;
+      left: auto;
     }
 
     #<?php echo esc_attr($block_id); ?> .hc-hugo-new-block__image-wrap {
